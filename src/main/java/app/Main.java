@@ -30,7 +30,7 @@ public class Main {
         Email from = new Email(FROM_EMAIL_ADDRESS);
         from.setName("SendGridDemo");
 
-        /* Erstat kunde@gmail.com, name, email og zip med egne værdier ****/
+        /* Erstat kunde@gmail.com, name, email og zip med egne værdier ***/
         /* I test-fasen - brug din egen email, så du kan modtage beskeden */
         Personalization personalization = new Personalization();
         personalization.addTo(new Email(toEmailAddress));
