@@ -28,7 +28,7 @@ public class Main {
         scanner.close();
 
         Email from = new Email(FROM_EMAIL_ADDRESS);
-        from.setName("Byggemarked");
+        from.setName("SendGridDemo");
 
         /* Erstat kunde@gmail.com, name, email og zip med egne værdier ****/
         /* I test-fasen - brug din egen email, så du kan modtage beskeden */
@@ -41,7 +41,7 @@ public class Main {
         Mail mail = new Mail();
         mail.setFrom(from);
         mail.addPersonalization(personalization);
-        mail.addCategory("carportapp");
+        mail.addCategory("SendGridDemo");
         mail.templateId = SENDGRID_TEMPLATE_ID;
 
         // Klargør request
